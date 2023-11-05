@@ -1,0 +1,124 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Dec 10 13:04:35 2022
+[*]
+[dumpfile] "C:\Users\zhe\Desktop\RVTDNNTop.vcd"
+[dumpfile_mtime] "Sat Dec 10 13:03:59 2022"
+[dumpfile_size] 6493403
+[savefile] "C:\Users\zhe\Desktop\RVTDNNTopBias.gtkw"
+[timestart] 842
+[size] 1440 897
+[pos] -1 -1
+*-10.000000 1753 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.RVTDNNTop.
+[treeopen] TOP.RVTDNNTop.rvtdnnModule.
+[sst_width] 323
+[signals_width] 379
+[sst_expanded] 1
+[sst_vpaned_height] 257
+@200
+-BA_0
+@420
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_0[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_1[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_2[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_3[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_4[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_5[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_6[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_7[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_8[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.actReg_9[31:0]
+@24
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_0[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_1[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_2[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_3[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_4[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_5[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_6[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_7[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_8[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_0.biasReg_9[15:0]
+@200
+-BA_1
+@22
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_0[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_1[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_2[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_3[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_4[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_5[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_6[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_7[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_8[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_9[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_10[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_11[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_12[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_13[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.actReg_14[31:0]
+@24
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_0[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_1[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_2[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_3[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_4[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_5[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_6[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_7[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_8[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_9[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_10[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_11[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_12[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_13[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_1.biasReg_14[15:0]
+@200
+-BA_2
+@23
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_0[31:0]
+@22
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_1[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_2[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_3[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_4[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_5[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_6[31:0]
++{BA_2.actReg_7[31:0]} TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_7[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_8[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.actReg_9[31:0]
+@420
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_0[15:0]
++{TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_1[15:0]} TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_1[15:0]
++{TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_2[15:0]} TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_2[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_3[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_4[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_5[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_6[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_7[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_8[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_2.biasReg_9[15:0]
+@200
+-BA_3
+@22
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_0[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_1[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_2[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_3[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_4[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_5[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_6[31:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.actReg_7[31:0]
+@24
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_0[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_1[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_2[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_3[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_4[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_5[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_6[15:0]
+TOP.RVTDNNTop.rvtdnnModule.BA_3.biasReg_7[15:0]
+[pattern_trace] 1
+[pattern_trace] 0
