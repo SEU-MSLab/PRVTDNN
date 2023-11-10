@@ -7,6 +7,7 @@ This repo contain the source code of Polyphase Real-Valued Time-Delay Neural Net
 ## Prerequisites
 * JDK 8 or newer. You can install the JDK as recommended by your operating system, or use the prebuilt binaries from [AdoptOpenJDK](https://adoptopenjdk.net/).
 * SBT.  SBT is the most common built tool in the Scala community. You can download it [here](https://www.scala-sbt.org/download.html).  
+* Firrtl. Firrtl is the tool to convert firrtl to verilog file. You can download it [here](https://github.com/llvm/circt/releases), and put it to your environment variable $PATH.
 
 ## How to get started
 ```sh

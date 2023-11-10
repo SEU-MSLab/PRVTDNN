@@ -1,6 +1,7 @@
 import chisel3._
 import chisel3.util._ 
 /**
+  * 
   * 根据地址分割确定哪里是Weight，哪里是Bias
   * 分割方案：如(12,10,15,10,8)的配置，则前120行是第一个SA的weight，然后150行第二个SA的weight
   */
@@ -177,8 +178,4 @@ class LoadWeightBias(layerConfig: List[Int] = List(12,10,15,10,8),
     io.outWtValid   := wtValidReg
     io.outBiasValid := biasValidReg
 
-
-/***********************************/
-
 }
-        
