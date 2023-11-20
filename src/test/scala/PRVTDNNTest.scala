@@ -3,14 +3,13 @@ import chisel3._
 import chisel3.util._
 import org.scalatest.flatspec.AnyFlatSpec
 
-class RVTDNNTest extends AnyFlatSpec with ChiselScalatestTester {
+class PRVTDNNTest extends AnyFlatSpec with ChiselScalatestTester {
   behavior of "RVTDNNTest"
   ignore should "pass" in {
-    test(new RVTDNNTop).withAnnotations(
+    test(new PRVTDNNTop).withAnnotations(
         Seq(VerilatorBackendAnnotation, WriteVcdAnnotation)) { dut =>
           dut.clock.setTimeout(0)
           // dut.io.bramIF.enable.poke(true.B)
-          // 文件交互
           val bramSource = scala.io.Source.fromResource("bramData.dat")
           val bramData  = try bramSource.getLines.toList.map(_.toInt) finally bramSource.close()
           val actSource = scala.io.Source.fromResource("actData.dat")

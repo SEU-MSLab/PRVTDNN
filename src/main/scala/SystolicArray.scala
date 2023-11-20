@@ -1,8 +1,28 @@
+/*
+MIT License
+
+Copyright (c) 2023 Microwave System Lab @ Southeast University.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
 import chisel3._
 import chisel3.util._ 
-/**
- * 需求：需要可配置采样率抽取，实现983.04M采样率下也能跑122.88M的模型，类似FIR滤波器延迟n个周期
- */
 
 class SystolicArray(actWidth: Int = 16, weightWidth: Int = 16, accWidth: Int = 32,
                     meshRows: Int = 4, meshColumns: Int = 4 ) extends Module{
@@ -14,31 +34,26 @@ class SystolicArray(actWidth: Int = 16, weightWidth: Int = 16, accWidth: Int = 3
   })
 
 
-  // PEs(r)(c)表示第r行，第c列的PE，从0开始
+  // PEs(r)(c) represent the PE in row r, column c, start from 0
   val PEs: Seq[Seq[PE]] = Seq.fill(meshRows, meshColumns)(Module(new PE(actWidth, weightWidth, accWidth)))
-  // 产生PE间的互连线，但是好像根本不需要
-  // val wtPSWire = Wire(Vec((meshRows-1)*meshColumns, SInt(accWidth.W)))
-  // val actWire  = Wire(Vec(meshRows*(meshColumns-1), SInt(actWidth.W)))
   val validReg = RegNext(io.inwtValid)
   
 
   PEs.foreach(_.foreach(_.io.inwtValid := validReg));
 
-  // 虽然不是很像用for循环来连线，但gemmini都用了
   for(row <- 0 until meshRows){
     for(col <- 0 until meshColumns){
-      // 第一行的输入连接到SA端口
+      // The input of first row connect to the input
       if(row == 0)  PEs(row)(col).io.inWtPS := io.inWeight(col)
       else          PEs(row)(col).io.inWtPS := PEs(row-1)(col).io.outWtPS
 
-      // 最后一行的输出连接到模块外
+      // The output of last row connect to the output
       if(row == meshRows-1)   io.outSum(col) := PEs(row)(col).io.outWtPS
       
-      // 第一列
       if(col == 0)  PEs(row)(col).io.inAct := io.inAct(row)
       else          PEs(row)(col).io.inAct := PEs(row)(col-1).io.outAct
 
-      // 最后一列的outAct可以不管
+      // leave the last column's outAct alone
     }
   }
 }
