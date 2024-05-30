@@ -6,10 +6,10 @@ This repo contain the source code of Polyphase Real-Valued Time-Delay Neural Net
 
 ### System Architecture
 The architecture include 
-- *Systolic array*: to do the matrix multiplication.
-- *Bias and activation module*: to add biases and apply activation functions, we implement three, ReLU, Sigmoid and Linear.
-- *Parameter loading module*: to propagate weights to systolic arrays and biases to bias and activation modules.
-- *Pipeline dataflow*: the DPD is a real-time problem, so multiple systolic arrays are cascade to make a fully pipeline neural network implementation at the expense of more area.
+- **Systolic array**: to do the matrix multiplication.
+- **Bias and activation module**: to add biases and apply activation functions, we implement three, ReLU, Sigmoid and Linear.
+- **Parameter loading module**: to propagate weights to systolic arrays and biases to bias and activation modules.
+- **Pipeline dataflow**: the DPD is a real-time problem, so multiple systolic arrays are cascade to make a fully pipeline neural network implementation at the expense of more area.
 
 <img src="images/system architecture.png" alt="The system architecture" width="800">
 
